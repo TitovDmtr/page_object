@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class ConfigProvider {
     private static ConfigProvider instance;
-    private Properties properties;
+    private final Properties properties;
 
     ConfigProvider() {
         properties = new Properties();

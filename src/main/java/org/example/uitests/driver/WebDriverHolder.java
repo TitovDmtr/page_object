@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class WebDriverHolder {
     private static WebDriverHolder instance = null;
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     WebDriverHolder() {
         driver = WebDriverFactory3.getDriver();
